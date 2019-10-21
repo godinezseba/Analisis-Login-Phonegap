@@ -3,8 +3,9 @@ var app = {
     check: function () {
         user = localStorage.user;
         if (user != undefined && user != null && user.length > 0) {
-            // window.location = 'menu.html';
-            window.console.log(user);
+            // se deberia checkear
+            user = JSON.parse(user);
+            window.location = 'menu.html';
         } else {
             window.location = 'login.html';
         }

@@ -7,6 +7,7 @@ var login = {
         // checkeo con la BD
         if (name == "seba") {
             localStorage.setItem('user', JSON.stringify({"nombre" : name}));
+            window.location = "menu.html"
         } else{
             window.alert("Usuario no registrado");
         }
