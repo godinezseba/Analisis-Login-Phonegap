@@ -1,14 +1,24 @@
-# A Blank PhoneGap App
+# Hola
 
-## Usage
+## Comandos
 
-### PhoneGap CLI
+### Plataforma
+Para poder compilar es necesario el siguiente comando,
 
-    $ phonegap create my-app --template blank
+```phonegap platform <plataforma>```
 
-### Desktop
+donde las disponibles son:
+- browser
+- android
+- electron
+- ios
+- osx
+- windows
 
-In your browser, open the file:
+### Compilar:
 
-    /www/index.html
+```phonegap build <plataforma>```
 
+### Ejecutar:
+
+```phonegap serve```
