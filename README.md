@@ -3,7 +3,7 @@
 ## Comandos
 
 ### Plataforma
-Para poder compilar es necesario el siguiente comando,
+Antes de compilar nuestro proyecto para cualquier plataforma, es necesario declarar que usaremos dicha plataforma con el siguiente comando:
 
 ```phonegap platform <plataforma>```
 
@@ -15,10 +15,11 @@ donde las disponibles son:
 - osx
 - windows
 
-### Compilar:
+### Compilar
 
 ```phonegap build <plataforma>```
 
-### Ejecutar:
+### Ejecutar
+Para ejecutar en el browser se utiliza el siguiente comando:
 
-```phonegap serve```
+```phonegap serve --no-autoreload```
