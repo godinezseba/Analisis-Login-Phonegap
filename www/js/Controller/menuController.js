@@ -19,12 +19,12 @@ var menu = {
     },
 
     datos: function () {
-        window.console.log("hola");
         $.ajax({
             type: "GET",
-            url: "localhost:8000/v1/torneo/getAll",
-            success: function (data) {
-                
+            url: "http://localhost:8000/v1/torneo/getAll",
+            // dataType: "json",
+            success: function(data) {
+                window.console.log("hola");
                 window.console.log(data);
                 data.forEach(element => {
                     $("#torneos").append('<div class="card border-primary mb-3" style="max-width: 18rem;">\
@@ -36,10 +36,10 @@ var menu = {
                                         </div>');
                 });
             },
-            failure: function (errMsg) {
+            failure: function(errMsg) {
                 $("#torneos").html("Torneos no disponibles :(");
                 window.console.log(errMsg);
-            }
+            },
         });
         window.console.log("mundo");
     },
