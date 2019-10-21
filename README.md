@@ -5,7 +5,7 @@
 ### Plataforma
 Antes de compilar nuestro proyecto para cualquier plataforma, es necesario declarar que usaremos dicha plataforma con el siguiente comando:
 
-```phonegap platform <plataforma>```
+```phonegap platform add <plataforma>```
 
 donde las disponibles son:
 - browser
