@@ -9,8 +9,6 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <plugin name="cordova-plugin-whitelist" version="1" />
-    <plugin name="NetworkStatus" value="org.apache.cordova.NetworkManager" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
