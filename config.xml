@@ -9,4 +9,7 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
 </widget>
