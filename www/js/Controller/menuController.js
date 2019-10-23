@@ -15,7 +15,7 @@ var menu = {
             window.location = "index.html";
         }
         // window.console.log(user);
-        document.getElementById("name").innerHTML = user.nombre;
+        document.getElementById("name").innerHTML = `Hola ${ user.nombre }!`;
     },
 
     datos: function () {
@@ -28,16 +28,16 @@ var menu = {
             },
             success: function(data) {
                 data.forEach(element => {
-                    $("#torneos").append('<div class="card border-primary mb-3" style="max-width: 18rem;">\
-                                            <div class="card-header">'+element.nombre+'</div>\
+                    $("#torneos").append(`<div class="card border-primary mb-3" style="max-width: 18rem;">\
+                                            <div class="card-header">${element.nombre}</div>\
                                             <div class="card-body text-primary">\
-                                                <h5 class="card-title">Pais: '+element.pais+'</h5>\
+                                                <h5 class="card-title">Pais: ${element.pais}</h5>\
                                             </div>\
-                                        </div>');
+                                        </div>`);
                 });
             },
             failure: function(errMsg) {
-                $("#torneos").html("Torneos no disponibles :(");
+                document.getElementById("torneos").innerHTML = "Torneos no disponibles :(";
                 window.console.log(errMsg);
             },
         });
